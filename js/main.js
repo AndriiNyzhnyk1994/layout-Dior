@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiperTop = new Swiper('.top__swiper', {
     effect: "fade",
     navigation: {
       nextEl: '.swiper-button-next',
@@ -8,4 +8,16 @@ const swiper = new Swiper('.swiper', {
         delay: 3500,
         disableOnInteraction: false,
     }
+  });
+
+
+  
+  const swiperAbout = new Swiper(".about__slider", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    freeMode: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
